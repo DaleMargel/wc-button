@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>wc-toggle</title>
+		<meta charset="utf-8">
+		<style>
+			body { font-family: sans-serif }
+			td { text-align: center; padding:10px 10px 0px 10px }
+		</style>
+	</head>
+	<body>
+		<h1>wc-button</h1>
+		<p><b>Easy to use buttons</b></p>
+
+		<h2>Features</h2>
+		<ul>
+			<li>single file, ready to go, import and use!<br>
+			<li>small size 2k to 3k w/o compression<br>
+				...depending on whether styles are embedded</li>
+			<li>web component: compatible with <b>all</b> frameworks</li>
+			<li>control contains it's own design system</li>
+			<li>code is simple enough to change what you don't like</li>
+			<li>just import it and use it like a normal html tag<br>
+				...no special skills needed!</li>
+		</ul>
+
+		<p>The look of the button can be set through attributes</p>
+		<ul>
+			<li><b>color:</b> blank, default, primary, success, info, warning, danger</li>
+			<li><b>size:</b> small, medium, large, huge</li>
+			<li><b>trim:</b> square, smooth, round</li>
+			<li><b>span:</b> narrow, normal, wide, extrawide, full</li>
+			<li><b>theme:</b> light, dark</li>
+		</ul>
+		<hr>
+
+		<h2>Varieties</h2>
+		<p>Here are examples of the available attributes</p>
+		<table>
+			<tr><th>attribute</th><th>button</th></tr>
+			<tr>
+				<td>color</td>
+				<td><wc-button color=""></wc-button></td>
+				<td><wc-button color="blank">blank</wc-button></td>
+				<td><wc-button color="default">default</wc-button></td>
+				<td><wc-button color="primary">primary</wc-button></td>
+				<td><wc-button color="success">sucess</wc-button></td>
+				<td><wc-button color="info">info</wc-button></td>
+				<td><wc-button color="warning">warning</wc-button></td>
+				<td><wc-button color="danger">danger</wc-button></td>
+			</tr>
+			<tr>
+				<td>right icons</td>
+				<td><wc-button color=""><wc-icon name="back"></wc-icon></wc-button></td>
+				<td><wc-button color="blank">blank <wc-icon name="bar-chart"></wc-icon></wc-button></td>
+				<td><wc-button color="default">default <wc-icon name="back"></wc-icon></wc-button></td>
+				<td><wc-button color="primary">primary <wc-icon name="bug-fill"></wc-icon></wc-button></td>
+				<td><wc-button color="success">success <wc-icon name="caret-right-fill"></wc-icon></wc-button></td>
+				<td><wc-button color="info">info <wc-icon name="chat-left"></wc-icon></wc-button></td>
+				<td><wc-button color="warning">warning <wc-icon name="circle"></wc-icon></wc-icon></wc-button></td>
+				<td><wc-button color="danger">danger <wc-icon name="diamond"></wc-icon></wc-button></td>
+			</tr>
+			<tr>
+				<td>left icons</td>
+				<td><wc-button color=""><wc-icon name="back"></wc-icon></wc-button></td>
+				<td><wc-button color="blank"><wc-icon name="bar-chart"></wc-icon> blank</wc-button></td>
+				<td><wc-button color="default"><wc-icon name="back"></wc-icon> default</wc-button></td>
+				<td><wc-button color="primary"><wc-icon name="bug-fill"></wc-icon> primary</wc-button></td>
+				<td><wc-button color="success"><wc-icon name="caret-right-fill"></wc-icon> success</wc-button></td>
+				<td><wc-button color="info"><wc-icon name="chat-left"></wc-icon> info</wc-button></td>
+				<td><wc-button color="warning"><wc-icon name="circle"></wc-icon> warning </wc-icon></wc-button></td>
+				<td><wc-button color="danger"><wc-icon name="diamond"></wc-icon> danger</wc-button></td>
+			</tr>
+			<tr style="background-color: #404040">
+				<td style="color:white">dark theme</td>
+				<td><wc-button theme="dark" color=""><wc-icon name="back"></wc-icon></wc-button></td>
+				<td><wc-button theme="dark" color="blank"><wc-icon name="bar-chart"></wc-icon> blank</wc-button></td>
+				<td><wc-button theme="dark" color="default"><wc-icon name="back"></wc-icon> default</wc-button></td>
+				<td><wc-button theme="dark" color="primary"><wc-icon name="bug-fill"></wc-icon> primary</wc-button></td>
+				<td><wc-button theme="dark" color="success"><wc-icon name="caret-right-fill"></wc-icon> success</wc-button></td>
+				<td><wc-button theme="dark" color="info"><wc-icon name="chat-left"></wc-icon> info</wc-button></td>
+				<td><wc-button theme="dark" color="warning"><wc-icon name="circle"></wc-icon> warning </wc-icon></wc-button></td>
+				<td><wc-button theme="dark" color="danger">danger <wc-icon name="diamond"></wc-icon></wc-button></td>
+			</tr>
+			<tr>
+				<td>size</td>
+				<td><wc-button size="small">small</wc-button></td>
+				<td><wc-button size="medium">medium</wc-button></td>
+				<td><wc-button size="large">large</wc-button></td>
+				<td><wc-button size="huge">huge</wc-button></td>
+			</tr>
+			<tr>
+				<td>trim</td>
+				<td><wc-button trim="square">square</wc-button></td>
+				<td><wc-button trim="smooth">smooth</wc-button></td>
+				<td><wc-button trim="round">round</wc-button></td>
+			</tr>
+		</table>
+		<table>
+			<tr><td>span</td>
+				<td><wc-button span="narrow">narrow</wc-button></td>
+				<td><wc-button span="normal">normal</wc-button></td>
+				<td><wc-button span="wide">wide</wc-button></td>
+				<td><wc-button span="extrawide">extrawide</wc-button></td>
+			</tr>
+			<tr>
+				<td>full wide</td>
+				<td colspan="8"><wc-button span="full">Full Width</wc-button></td>
+			</tr>
+			<tr>
+				<td>overflow</td>
+				<td colspan="8"><wc-button>default with some long text, the button will grow to accomdate text</wc-button></td>
+			</tr>
+			<tr>
+				<td>mixed</td>
+				<td colspan="8"><wc-button size="huge" color="warning" trim="round" span="wide"><wc-icon name="emoji-sunglasses"></wc-icon> huge wide round warning <wc-icon name="emoji-sunglasses"></wc-icon></wc-button></td>
+			</tr>
+
+		</table>
+		<hr>
+
+		<h2>Uses</h2>
+		<p>as a link, or event sender</p>
+		<wc-button href="https://www.w3schools.com" target="_blank">click link</wc-button>
+		<wc-button id="xmorph" onclick="morph('#xmorph')">click me!</wc-button>
+		<hr>
+		
+		<h2>Try it out</h2>
+		<wc-has>
+			<wc-button has="color size trim span theme text" onclick="reset()">Test...</wc-button>
+			<table>
+				<tr><td>color</td><td>size</td><td>trim</td><td>span</td><td>theme</td><td>text</td></tr>
+				<tr>
+					<td>
+						<select has="color">
+							<option value=""></option>
+							<option value="blank">blank</option>
+							<option value="default">default</option>
+							<option value="primary">primary</option>
+							<option value="success">success</option>
+							<option value="info">info</option>
+							<option value="warning">warning</option>
+							<option value="danger">danger</option>
+						</select>			
+					</td>
+					<td>
+						<select has="size">
+							<option value=""></option>
+							<option value="small">small</option>
+							<option value="medium">medium</option>
+							<option value="large">large</option>
+							<option value="huge">huge</option>
+						</select>			
+					</td>
+					<td>
+						<select has="trim">
+							<option value=""></option>
+							<option value="square">square</option>
+							<option value="smooth">smooth</option>
+							<option value="round">round</option>
+						</select>			
+					</td>
+					<td>
+						<select has="span">
+							<option value=""></option>
+							<option value="narrow">narrow</option>
+							<option value="normal">normal</option>
+							<option value="wide">wide</option>
+							<option value="extrawide">extrawide</option>
+							<option value="full">full</option>
+						</select>			
+					</td>
+					<td>
+						<select has="theme">
+							<option value=""></option>
+							<option value="light">light</option>
+							<option value="dark">dark</option>
+						</select>			
+					</td>
+					<td>
+						<input has="text" value="Test..."/>
+					</td>
+				</tr>
+			</table>
+		</wc-has>
+		<hr>
+
+		<h2>Notes</h2>
+
+		<ul>
+			<li>inspired by <a href="https://tachyons.io/" target="_blank">Tachyons</a> but adapted to web components</li>
+			<li>also inspired by <a href="https://shoelace.style/" target="_blank">Shoelace</a></li>
+			<li>supplies limited but useful style choices</li>
+			<li>existing sytles can be changed or extended with simple edits</li>
+		</ul>
+		<br><br><br>
+		<script type="module" src="./src/wc-button.js" inline></script>
+		<script type="module" src="./libs/wc-has.js" inline></script>
+		<script type="module" src="./libs/wc-icon.js" inline></script>
+		<script>
+			function morph(sel){
+				let b = document.querySelector(sel);
+				if(b.innerText != 'BOOM!') {
+					b.innerText="BOOM!"
+					b.setAttribute('size','huge');
+					b.setAttribute('color','warning');
+					b.setAttribute('trim','round');
+				}
+				else {
+					b.innerText="click me!"
+					b.setAttribute('size','');
+					b.setAttribute('color','');
+					b.setAttribute('trim','');
+				}
+			}
+			function reset(){
+				let haz = document.querySelector('wc-has');
+				haz.putAttribute('text','Test...');
+				haz.putAttribute('color','');
+				haz.putAttribute('size','');
+				haz.putAttribute('trim','');
+				haz.putAttribute('span','');
+				haz.putAttribute('theme','');
+			}
+		</script>
+	</body>
+</html>
