@@ -46,6 +46,6 @@ To add an icon to the button:
 ```
 
 ## Demo
-Use this link : <https:dalemargel.github.io/wc-button> (sorry, github does not seem to allow external links)
+Use this link : <https://dalemargel.github.io/wc-button>
 
 
